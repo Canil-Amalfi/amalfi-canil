@@ -39,7 +39,7 @@
         margin: 0.5rem auto;
         padding: 0.8rem;
         border-radius: 1rem;
-        font-size: 1.5em;
+        font-size: 1em;
         box-shadow: -2px 2px 5px #00000071;
       }
     }
@@ -55,6 +55,12 @@
     figcaption {
       text-align: justify;
       font-size: 1.5em
+    }
+
+    a {
+      button {
+        font-size: 1.5em;
+      }
     }
   }
 }
