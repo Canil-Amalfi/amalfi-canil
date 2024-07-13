@@ -1,0 +1,35 @@
+.footer__section {
+  display: block;
+  margin: auto;
+  max-width: 1200px;
+
+  .flex__footer {
+    display: flex;
+    justify-content: space-around;
+    ul {
+      h2 {
+        font-family: "arista pro bold";
+        color: #8600c6;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        margin: 0.5rem auto;
+
+        .footer__icons {
+          color: #f4b706;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        .listItem__menu {
+            font-weight: 900;
+            color: #f4b706;
+        }
+      }
+    }
+  }
+}

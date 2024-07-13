@@ -1,0 +1,95 @@
+/* DropMenu.module.css */
+
+.dropMenu {
+  display: block;
+  float: right;
+  width: 50%;
+  background-color: #fff;
+  background-image: url("/images/paws-pattern.png");
+  border-radius: 0 0 0 .5rem;
+
+  .headerMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6rem;
+    background-color: #8600c6;
+    margin-bottom: 1rem;
+
+    h1 {
+      color: #fff;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .close__icon {
+        font-size: 2em;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        transform: translateY(-2px);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    li {
+        list-style: none;
+        text-align: center;
+        margin: 2rem auto;
+        font-size: 1.5em;
+        font-weight: 900;
+        color: #f4b706;
+        text-shadow: 1px 1px 3px black;
+    }
+
+    li:hover {
+        font-size: 1.7em;
+        color: #8600c6;
+    }
+  }
+
+  .socials__menu {
+    display: flex;
+    justify-content: center;
+
+    .socials__iconMenu {
+        font-size: 2em;
+        margin: 2rem .2rem;
+    }
+  }
+}
+
+.show {
+  animation: show .2s forwards;
+}
+
+.hide {
+  animation: hide .2s forwards;
+}
+
+@keyframes show {
+  from {
+    transform: translateX(1000px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes hide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(1000px);
+  }
+}
+
+@media (min-width: 761px) {
+    .dropMenu {
+        width: 20%;
+    }
+}

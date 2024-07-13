@@ -1,0 +1,21 @@
+.amount {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  max-width: 100%;
+
+  .amount__input {
+    margin: 0.5rem auto;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: transparent;
+    max-width: 30%;
+  }
+
+  .amount__Icon {
+    font-size: 2em;
+    cursor: pointer;
+    color: #4a4a4a;
+  }
+}

@@ -1,0 +1,45 @@
+header {
+  background-color: #8600c6;
+
+  .header__section {
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+
+    .flex__menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 3.2rem;
+
+      h1 {
+        img {
+          width: 150px;
+        }
+      }
+
+      .hamburguer__icon {
+        font-size: 2em;
+        color: #fff;
+        margin-right: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .header__extension {
+    background-color: #fff;
+    padding: 1rem;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        font-family: 'arista pro bold';
+        color: #8600c6;
+      }
+    }
+  }
+}
