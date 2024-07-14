@@ -10,11 +10,11 @@ export default function NextLitters() {
       <div className={styles.card__nextLitters}>
         <div className={styles.dogs}>
           <div className={styles.bidu}>
-            <img src="/images/gallery/bidu-lingua.JPG" alt="dog bidu" />
+            <img src="/images/gallery/bidu-lingua.png" alt="Beagle Bidu" />
             <h3>Bidu</h3>
           </div>
           <div className={styles.poly}>
-            <img src="/images/gallery/poly-lingua-2.JPG" alt="dog bidu" />
+            <img src="/images/gallery/poly-lingua-2.png" alt="Beagle Poly" />
             <h3>Poly</h3>
           </div>
         </div>

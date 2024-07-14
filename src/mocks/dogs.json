@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Bidu Amalfi",
+        "gender": "Macho",
+        "breed": "Beagle",
+        "color": "Tricolor",
+        "birthday": "02/12/2020",
+        "image": "/images/gallery/bidu-lingua.png",
+        "alt": "Beagle Bidu"
+    },
+    {
+        "name": "Poly Amalfi",
+        "gender": "Fêmea",
+        "breed": "Beagle",
+        "color": "Bicolor",
+        "birthday": "24/06/2021",
+        "image": "/images/gallery/poly-lingua-2.png",
+        "alt": "Beagle Poly"
+    }
+]

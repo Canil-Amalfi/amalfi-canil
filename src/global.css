@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "arista pro bold";
-  src: url("../public/fonts/Arista-Pro-Alternate-Bold-trial.ttf"),
+  src: url("./fonts/Arista-Pro-Alternate-Bold-trial.ttf"),
     format("truetype");
 }
 
@@ -23,6 +23,10 @@
   list-style: none;
   font-family: "arista pro light", Arial, Helvetica, sans-serif;
 }
+
+html, body {
+  min-height: 100vh;
+} 
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {

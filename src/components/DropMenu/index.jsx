@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 export default function DropMenu({ toogleMenu }) {
   const [closing, setClosing] = useState(false);
@@ -29,14 +30,14 @@ export default function DropMenu({ toogleMenu }) {
           <h1>MENU</h1>
           <IoClose className={styles.close__icon} onClick={handleClose}/>
         </div>
-        <a href="#">
+        <Link to={"/"}>
           <li className={styles.listItem__menu}>HOME</li>
-        </a>
+        </Link>
+        <Link to={"/nossos-caes"}>
+          <li className={styles.listItem__menu}>NOSSOS CÃES</li>
+        </Link>
         <a href="#">
           <li className={styles.listItem__menu}>BLOG</li>
-        </a>
-        <a href="#">
-          <li className={styles.listItem__menu}>NOSSOS CÃES</li>
         </a>
         <a href="#">
           <li className={styles.listItem__menu}>GALERIA</li>

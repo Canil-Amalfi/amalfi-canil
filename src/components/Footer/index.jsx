@@ -29,10 +29,10 @@ export default function Footer() {
               <li className={styles.listItem__menu}>HOME</li>
             </a>
             <a href="#">
-              <li className={styles.listItem__menu}>BLOG</li>
+              <li className={styles.listItem__menu}>NOSSOS CÃES</li>
             </a>
             <a href="#">
-              <li className={styles.listItem__menu}>NOSSOS CÃES</li>
+              <li className={styles.listItem__menu}>BLOG</li>
             </a>
             <a href="#">
               <li className={styles.listItem__menu}>GALERIA</li>
