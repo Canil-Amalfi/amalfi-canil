@@ -36,9 +36,9 @@ export default function DropMenu({ toogleMenu }) {
         <Link to={"/nossos-caes"}>
           <li className={styles.listItem__menu}>NOSSOS CÃES</li>
         </Link>
-        <a href="#">
+        <Link to={"/blog"}>
           <li className={styles.listItem__menu}>BLOG</li>
-        </a>
+        </Link>
         <a href="#">
           <li className={styles.listItem__menu}>GALERIA</li>
         </a>

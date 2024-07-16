@@ -1,0 +1,13 @@
+.aboutOurDogs__section {
+    h1 {
+        color: #8600C6;
+        margin-left: .5rem;
+    }
+
+    .flex__cardDogs__div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

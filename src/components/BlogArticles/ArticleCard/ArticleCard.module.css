@@ -1,0 +1,38 @@
+.article__card {
+  width: 250px;
+  background-color: #650096;
+  border-radius: 2rem 0;
+
+  img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-height: 200px;
+    border-radius: 2rem 0;
+  }
+
+  .article__card__texts {
+    padding: 0.6rem;
+    color: #ffff;
+    border-radius: 0 0 2rem 0;
+
+    h3,
+    p {
+      text-align: center;
+    }
+
+    p {
+      margin: 0.3rem auto;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin: 0.5rem auto;
+      padding: 0.5rem;
+      border-radius: 2rem 0;
+      background-color: #f4b706;
+      font-size: 1.2em;
+    }
+  }
+}
