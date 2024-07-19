@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import styles from "./ArticleCard.module.css";
 import PropTypes from 'prop-types';
 
-export default function ArticleCard({ titleCard, teaserText, imageCard, alt }) {
+export default function ArticleCard({ titleCard, teaserText, imageCard, alt, id }) {
   return (
     <div className={styles.article__card}>
       <img src={imageCard} alt={alt} />
@@ -10,7 +11,7 @@ export default function ArticleCard({ titleCard, teaserText, imageCard, alt }) {
         <p>
           {teaserText}
         </p>
-        <button>Ver Mais</button>
+        <Link to={`/blog/blogPosts/${id}`}><button>Ver Mais</button></Link>
       </div>
     </div>
   );
@@ -20,5 +21,6 @@ ArticleCard.propTypes = {
     titleCard: PropTypes.string.isRequired,
     teaserText: PropTypes.string.isRequired,
     imageCard: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired
+    alt: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired
 }

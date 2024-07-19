@@ -36,6 +36,7 @@ export default function WaitingList() {
       Email: data.email,
       Telefone: data.telefone,
       Quantidade: quantidade,
+      Cor: data.cor,
       Gênero: data.genero,
     };
 
@@ -96,13 +97,35 @@ export default function WaitingList() {
         {errors.telefone && <small>{errors.telefone.message}</small>}
         <Amount handleAmount={setQuantidade} value={quantidade} />
       </div>
+      <h3>Cor do Pelo</h3>
+      <div className={styles.flex__inputs__form}>
+        <div>
+          <input
+            type="radio"
+            id="bicolor"
+            value="Bicolor"
+            {...register("cor")}
+          />
+          <label htmlFor="bicolor">Bicolor</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="tricolor"
+            value="Tricolor"
+            {...register("cor")}
+          />
+          <label htmlFor="tricolor">Tricolor</label>
+        </div>
+      </div>
+      {errors.genero && <small>*Selecione a cor*</small>}
       <h3>Gênero Pretendido</h3>
       <div className={styles.flex__inputs__form}>
-        <div className={styles.male___radio}>
+        <div>
           <input type="radio" id="male" value="Macho" {...register("genero")} />
           <label htmlFor="male">Macho</label>
         </div>
-        <div className={styles.female___radio}>
+        <div>
           <input
             type="radio"
             id="female"

@@ -23,16 +23,20 @@
 
     p {
       margin: 0.3rem auto;
+      line-height: 1.3em;
     }
 
-    button {
-      display: block;
-      width: 100%;
-      margin: 0.5rem auto;
-      padding: 0.5rem;
-      border-radius: 2rem 0;
-      background-color: #f4b706;
-      font-size: 1.2em;
+    a {
+      text-decoration: none;
+      button {
+        display: block;
+        width: 100%;
+        margin: 0.5rem auto;
+        padding: 0.5rem;
+        border-radius: 2rem 0;
+        background-color: #f4b706;
+        font-size: 1.2em;
+      }
     }
   }
 }

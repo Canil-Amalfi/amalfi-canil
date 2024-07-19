@@ -19,6 +19,7 @@ export default function BlogArticles() {
             teaserText={article.teaserText}
             imageCard={article.imageCard}
             alt={article.alt}
+            id={article.id}
           />
         ))}
       </div>
