@@ -30,18 +30,20 @@ export default function DropMenu({ toogleMenu }) {
           <h1>MENU</h1>
           <IoClose className={styles.close__icon} onClick={handleClose}/>
         </div>
-        <Link to={"/"}>
-          <li className={styles.listItem__menu}>HOME</li>
-        </Link>
-        <Link to={"/nossos-caes"}>
-          <li className={styles.listItem__menu}>NOSSOS CÃES</li>
-        </Link>
-        <Link to={"/blog"}>
-          <li className={styles.listItem__menu}>BLOG</li>
-        </Link>
-        <a href="#">
-          <li className={styles.listItem__menu}>GALERIA</li>
-        </a>
+        <div className={styles.navigation}>
+          <Link to={"/"}>
+            <li className={styles.listItem__menu} onClick={handleClose}>HOME</li>
+          </Link>
+          <Link to={"/nossos-caes"}>
+            <li className={styles.listItem__menu} onClick={handleClose}>NOSSOS CÃES</li>
+          </Link>
+          <Link to={"/blog"}>
+            <li className={styles.listItem__menu} onClick={handleClose}>BLOG</li>
+          </Link>
+          <a href="#">
+            <li className={styles.listItem__menu} onClick={handleClose}>GALERIA</li>
+          </a>
+        </div>
         <div className={styles.socials__menu}>
           <a href="">
             <FaInstagram className={styles.socials__iconMenu} />

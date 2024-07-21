@@ -100,7 +100,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #00000097;
+  background-color: #000000ce;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -116,4 +116,23 @@ button {
     margin: 1.5rem auto;
     width: 15%;
   }
+}
+
+/*Swiper Personal Styles*/
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    background-color: #636363;
+    opacity: 0.7;
+    color: #ffff;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #ffff;
+    opacity: 1;
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #ffffff;
 }

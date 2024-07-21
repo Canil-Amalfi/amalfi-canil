@@ -4,7 +4,9 @@ import { TbGenderBigender } from "react-icons/tb";
 import { IoIosColorPalette } from "react-icons/io";
 import { FaCalendarAlt } from "react-icons/fa";
 import PropTypes from "prop-types";
-import { useState } from 'react';
+import { useState } from "react";
+import Overlay from "../../Overlay";
+import BasicSwiper from "../../BasicSwiper";
 
 export default function DogsCard({
   name,
@@ -14,14 +16,28 @@ export default function DogsCard({
   birthday,
   image,
   alt,
+  photos,
 }) {
   const [isOpened, setIsOpened] = useState(false);
-
   const handleToggle = () => {
     setIsOpened(!isOpened);
   };
 
   return (
+    <>
+      {isOpened && (
+        <Overlay>
+          <section className={styles.centralizer__section}>
+            <BasicSwiper
+              itens={photos}
+              clickable={true}
+              navigation={true}
+              keyboard={true}
+              handleToggle={handleToggle}
+            />
+          </section>
+        </Overlay>
+      )}
       <section className={styles.DogsCard__section}>
         <img src={image} alt={alt} />
         <h2>{name}</h2>
@@ -45,7 +61,8 @@ export default function DogsCard({
         </ul>
         <button onClick={handleToggle}>Ver Fotos</button>
       </section>
-    ); 
+    </>
+  );
 }
 
 DogsCard.propTypes = {
@@ -56,4 +73,5 @@ DogsCard.propTypes = {
   birthday: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
+  photos: PropTypes.array.isRequired,
 };

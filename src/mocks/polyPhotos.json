@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "image": "/images/poly-fotos/poly-1.JPG",
+        "alt": "profile photo Poly"
+    },
+    {
+        "id": 2,
+        "image": "/images/poly-fotos/poly-2.JPG",
+        "alt": "pregnant Poly"
+    },
+    {
+        "id": 3,
+        "image": "/images/poly-fotos/poly-3.JPG",
+        "alt": "Poly focus on face"
+    }
+]

@@ -23,7 +23,7 @@ export default function NextLitters() {
             <IoPawSharp className={styles.paws__icon}/> Beagle
           </h3>
           <span><strong>Previsão:</strong> Acompanhe no Instagram</span>
-          <a href="#">
+          <a href="#waitingList">
             <button className="btn-purple">Lista de Espera</button>
           </a>
           <a href="#">
@@ -31,7 +31,7 @@ export default function NextLitters() {
           </a>
         </footer>
         <div className={styles.socials__card}>
-            <a href="">
+            <a href="https://www.instagram.com/beaglebiduepoly/" target="blank">
                 <FaInstagram className={styles.socials__iconCard}/>
             </a>
             <a href="">

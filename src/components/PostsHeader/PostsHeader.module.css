@@ -1,0 +1,14 @@
+.header__section {
+  display: block;
+  width: 100%;
+  background-color: #8600c6;
+  padding: 0.6rem;
+
+  a {
+    text-decoration: none;
+    .arrow__back {
+      font-size: 1.5em;
+      color: #ffff;
+    }
+  }
+}

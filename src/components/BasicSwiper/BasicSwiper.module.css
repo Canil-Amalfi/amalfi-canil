@@ -1,0 +1,33 @@
+.mainSwiper {
+    width: 100%;
+    .swiperSlide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 2rem;
+
+        .close__icon {
+            font-size: 3em;
+            color: #ffff;
+            align-self: self-start;
+            cursor: pointer;
+            z-index: 3;
+          }
+          
+        img {
+            display: block;
+            margin: auto;
+            max-width: 80%;
+            max-height:500px;
+            object-fit: cover;
+            transform: translateX(1.5rem);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .mainSwiper {
+        width: 60%;
+    }
+}

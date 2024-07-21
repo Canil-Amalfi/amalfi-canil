@@ -5,7 +5,6 @@
   float: right;
   width: 200px;
   background-color: #fff;
-  background-image: url("/images/paws-pattern.png");
   border-radius: 0 0 0 0.5rem;
 
   .headerMenu {
@@ -31,34 +30,37 @@
     }
   }
 
-  a {
-    text-decoration: none;
-    li {
-      list-style: none;
-      text-align: center;
-      margin: 2rem auto;
-      font-size: 1em;
-      font-weight: 900;
-      color: #f4b706;
-      text-shadow: 1px 1px 3px black;
-    }
+  .navigation {
+    a {
+      text-decoration: none;
+      li {
+        list-style: none;
+        text-align: center;
+        margin: 1rem auto;
+        font-size: 1em;
+        font-weight: 900;
+        color: #8600c6;
+      }
 
-    li:hover {
-      color: #8600c6;
+      li:hover {
+        color: #8600c6;
+      }
     }
   }
 
   .socials__menu {
     display: flex;
     justify-content: center;
+    background-color: #8600c6;
+    border-radius: 0 0 0 0.5rem;
 
     a {
       text-decoration: none;
 
       .socials__iconMenu {
         font-size: 1.5em;
-        margin: 2rem 0.2rem;
-        color: #8600c6;
+        margin: 0.7rem 0.2rem;
+        color: #fff;
       }
     }
   }
@@ -95,10 +97,11 @@
 @media (min-width: 561px) {
   .dropMenu {
     width: 300px;
-
-    a {
-      li {
-        font-size: 1.2em;
+    .navigation {
+      a {
+        li {
+          font-size: 1.3em;
+        }
       }
     }
   }

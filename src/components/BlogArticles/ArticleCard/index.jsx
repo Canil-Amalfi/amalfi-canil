@@ -11,7 +11,7 @@ export default function ArticleCard({ titleCard, teaserText, imageCard, alt, id 
         <p>
           {teaserText}
         </p>
-        <Link to={`/blog/blogPosts/${id}`}><button>Ver Mais</button></Link>
+        <Link to={`/blogPosts/${id}`}><button>Ver Mais</button></Link>
       </div>
     </div>
   );

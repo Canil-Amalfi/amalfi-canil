@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Bidu Amalfi",
         "gender": "Macho",
         "breed": "Beagle",
@@ -9,6 +10,7 @@
         "alt": "Beagle Bidu"
     },
     {
+        "id": 2,
         "name": "Poly Amalfi",
         "gender": "Fêmea",
         "breed": "Beagle",

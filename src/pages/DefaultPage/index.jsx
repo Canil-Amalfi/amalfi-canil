@@ -8,7 +8,7 @@ export default function DefaultPage() {
   const [opened, setOpened] = useState(false);
 
   const toogleOpened = () => {
-    setOpened((prevState) => !prevState);
+    setOpened(!opened);
   };
 
   return (

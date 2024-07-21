@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Presentation.module.css";
 
 export default function Presentation() {
@@ -14,7 +15,7 @@ export default function Presentation() {
           vacinados, desparasitados, treinados para fazer as necessidades no
           local correto, com pedigree e com o kit {'"Meu primeiro Premier"'}
         </figcaption>
-        <a href="#"><button className="btn-purple">Fale Conosco</button></a>
+        <Link to={"#"}><button className="btn-purple">Fale Conosco</button></Link>
       </figure>
       <img src="/images/division-paws.png" alt="animal paws" className="division-paws"/>
     </section>

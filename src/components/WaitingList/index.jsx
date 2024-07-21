@@ -59,6 +59,7 @@ export default function WaitingList() {
   return (
     <form
       className={styles.waitingList__form}
+      id="waitingList"
       onSubmit={handleSubmit(handleSubmitWaitingList)}
     >
       <h2>Lista de Espera</h2>
