@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./BlogCall.module.css";
 
 export default function BlogCall() {
@@ -15,9 +16,9 @@ export default function BlogCall() {
           Acesse nosso Blog para ler sobre artigos diversos com assuntos
           voltados a Amalfi e aos Beagles.
         </figcaption>
-        <a href="#">
+        <Link to={"blog"}>
           <button className="btn-purple">Acessar Blog</button>
-        </a>
+        </Link>
       </figure>
       <img src="/images/division-paws.png" alt="animal paws" className="division-paws"/>
     </section>

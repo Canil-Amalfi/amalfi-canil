@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 import { IoMdMenu } from "react-icons/io";
 import PropTypes from 'prop-types';
+import logo from "/images/logo-amalfi-horizontal.png"
 
 export default function Header({toogleMenu}) {
   return (
@@ -8,7 +9,7 @@ export default function Header({toogleMenu}) {
       <section className={styles.header__section}>
         <div className={styles.flex__menu}>
           <h1>
-            <img src="/images/logo-amalfi-horizontal.png" alt="" />
+            <img src={logo} alt="logo amalfi" />
           </h1>
           <IoMdMenu className={styles.hamburguer__icon} onClick={toogleMenu}/>
         </div>

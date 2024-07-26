@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -25,18 +26,18 @@ export default function Footer() {
           </ul>
           <ul className={styles.menu__footer}>
             <h2>MENU</h2>
-            <a href="#">
+            <Link to={'/'}>
               <li className={styles.listItem__menu}>HOME</li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to={'nossos-caes'}>
               <li className={styles.listItem__menu}>NOSSOS CÃES</li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to={'blog'}>
               <li className={styles.listItem__menu}>BLOG</li>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to={'galeira'}>
               <li className={styles.listItem__menu}>GALERIA</li>
-            </a>
+            </Link>
           </ul>
         </div>
       </section>

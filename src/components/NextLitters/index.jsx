@@ -1,6 +1,7 @@
 import styles from "./NextLitters.module.css";
 import { IoPawSharp } from "react-icons/io5";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 export default function NextLitters() {
@@ -26,15 +27,15 @@ export default function NextLitters() {
           <a href="#waitingList">
             <button className="btn-purple">Lista de Espera</button>
           </a>
-          <a href="#">
+          <Link to={"nossos-caes"}>
             <button className="btn-gold">Sobre os Cães</button>
-          </a>
+          </Link>
         </footer>
         <div className={styles.socials__card}>
             <a href="https://www.instagram.com/beaglebiduepoly/" target="blank">
                 <FaInstagram className={styles.socials__iconCard}/>
             </a>
-            <a href="">
+            <a href="https://contate.me/canilamalfi" target="blank">
                 <FaWhatsapp className={styles.socials__iconCard}/>
             </a>
         </div>

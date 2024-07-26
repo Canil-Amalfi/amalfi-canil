@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "image": "/images/bidu-fotos/bidu-1.JPG",
+        "image": "/images/bidu-fotos/bidu-1.jpg",
         "alt": "profile photo Bidu"
     },
     {
         "id": 2,
-        "image": "/images/bidu-fotos/bidu-2.JPG",
+        "image": "/images/bidu-fotos/bidu-2.jpg",
         "alt": "Bidu full body"
     },
     {
         "id": 3,
-        "image": "/images/bidu-fotos/bidu-3.JPG",
+        "image": "/images/bidu-fotos/bidu-3.jpg",
         "alt": "Bidu focus on face"
     }
 ]
