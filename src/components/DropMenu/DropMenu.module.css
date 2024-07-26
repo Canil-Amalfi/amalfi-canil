@@ -4,8 +4,8 @@
   display: block;
   float: right;
   width: 200px;
+  height: 100vh;
   background-color: #fff;
-  border-radius: 0 0 0 0.5rem;
 
   .headerMenu {
     display: flex;
@@ -31,6 +31,7 @@
   }
 
   .navigation {
+    height: 83vh;
     a {
       text-decoration: none;
       li {
@@ -52,7 +53,6 @@
     display: flex;
     justify-content: center;
     background-color: #8600c6;
-    border-radius: 0 0 0 0.5rem;
 
     a {
       text-decoration: none;
