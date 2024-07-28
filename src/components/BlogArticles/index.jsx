@@ -6,7 +6,7 @@ export default function BlogArticles() {
   return (
     <section className={styles.blogArticles__section}>
       <h1>
-        Blog <span className="purple__letter">Amalfi</span>
+        Blog <span>Amalfi</span>
       </h1>
       <span className={styles.blog__caption}>
         Noticias sobre os doguinhos mais fofos do mundo você encontra aqui!
