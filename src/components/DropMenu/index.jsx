@@ -2,8 +2,8 @@ import styles from "./DropMenu.module.css";
 import Overlay from "../../components/Overlay";
 import { IoClose } from "react-icons/io5";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import PropTypes from 'prop-types';
-import { useState, useEffect } from 'react';
+import PropTypes from "prop-types";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function DropMenu({ toogleMenu }) {
@@ -25,38 +25,52 @@ export default function DropMenu({ toogleMenu }) {
 
   return (
     <Overlay>
-      <menu className={`${styles.dropMenu} ${closing ? styles.hide : styles.show}`}>
-        <div className={styles.headerMenu}>
-          <h1>MENU</h1>
-          <IoClose className={styles.close__icon} onClick={handleClose}/>
-        </div>
-        <div className={styles.navigation}>
-          <Link to={"/"}>
-            <li className={styles.listItem__menu} onClick={handleClose}>HOME</li>
-          </Link>
-          <Link to={"/nossos-caes"}>
-            <li className={styles.listItem__menu} onClick={handleClose}>NOSSOS CÃES</li>
-          </Link>
-          <Link to={"/blog"}>
-            <li className={styles.listItem__menu} onClick={handleClose}>BLOG</li>
-          </Link>
-          <a href="#">
-            <li className={styles.listItem__menu} onClick={handleClose}>GALERIA</li>
-          </a>
-        </div>
-        <div className={styles.socials__menu}>
-          <a href="">
-            <FaInstagram className={styles.socials__iconMenu} />
-          </a>
-          <a href="">
-            <FaWhatsapp className={styles.socials__iconMenu} />
-          </a>
-        </div>
-      </menu>
+      <section className={styles.align__right}>
+        <menu
+          className={`${styles.dropMenu} ${
+            closing ? styles.hide : styles.show
+          }`}
+        >
+          <div className={styles.headerMenu}>
+            <h1>MENU</h1>
+            <IoClose className={styles.close__icon} onClick={handleClose} />
+          </div>
+          <div className={styles.navigation}>
+            <Link to={"/"}>
+              <li className={styles.listItem__menu} onClick={handleClose}>
+                HOME
+              </li>
+            </Link>
+            <Link to={"nossos-caes"}>
+              <li className={styles.listItem__menu} onClick={handleClose}>
+                NOSSOS CÃES
+              </li>
+            </Link>
+            <Link to={"blog"}>
+              <li className={styles.listItem__menu} onClick={handleClose}>
+                BLOG
+              </li>
+            </Link>
+            <Link to="galeria">
+              <li className={styles.listItem__menu} onClick={handleClose}>
+                GALERIA
+              </li>
+            </Link>
+          </div>
+          <div className={styles.socials__menu}>
+            <a href="https://www.instagram.com/beaglebiduepoly/" target="blank">
+              <FaInstagram className={styles.socials__iconMenu} />
+            </a>
+            <a href="https://contate.me/canilamalfi" target="blank">
+              <FaWhatsapp className={styles.socials__iconMenu} />
+            </a>
+          </div>
+        </menu>
+      </section>
     </Overlay>
   );
 }
 
 DropMenu.propTypes = {
-  toogleMenu: PropTypes.func.isRequired
-}
+  toogleMenu: PropTypes.func.isRequired,
+};

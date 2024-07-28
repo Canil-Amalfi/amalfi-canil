@@ -1,6 +1,7 @@
-import styles from './Gallery.module.css';
+import { Link } from 'react-router-dom';
+import styles from './GalleryCall.module.css';
 
-export default function Gallery() {
+export default function GalleryCall() {
     return (
         <section className={styles.gallery__section}>
             <h1>Seção de Fofuras</h1>
@@ -10,7 +11,7 @@ export default function Gallery() {
                 <img src="/images/gallery/filhote-castelo.jpg" alt="A dog with castle background" />
                 <img src="/images/gallery/3filhotes-bidu-poly.jpg" alt="Three dogs" />               
             </div>
-            <a href="#"><button>Acessar Galeria</button></a>
+            <Link to={'galeria'}><button>Acessar Galeria</button></Link>
         </section>
     )
 }

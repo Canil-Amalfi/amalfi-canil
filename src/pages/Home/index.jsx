@@ -1,5 +1,5 @@
 import BlogCall from "../../components/BlogCall";
-import Gallery from "../../components/Gallery";
+import GalleryCall from "../../components/GalleryCall";
 import NextLitters from "../../components/NextLitters";
 import Presentation from "../../components/Presentation";
 import WaitingList from "../../components/WaitingList";
@@ -11,7 +11,7 @@ export default function Home() {
       <NextLitters />
       <WaitingList />
       <BlogCall />
-      <Gallery />
+      <GalleryCall />
     </main>
   );
 }

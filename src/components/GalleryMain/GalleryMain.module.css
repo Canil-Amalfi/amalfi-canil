@@ -1,0 +1,30 @@
+.gallery__section {
+    display: block;
+    margin: auto;
+
+    .header__gallery {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            color: #8600C6;
+            margin: 2rem;
+        }
+
+        button {
+            display: block;
+            padding: .7rem;
+            margin-right: .5rem;
+            border-radius: 1rem;
+            color: #ffff;
+        }
+    }
+
+    .photosArea {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}

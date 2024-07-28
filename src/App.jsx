@@ -4,6 +4,7 @@ import OurDogs from "./pages/OurDogs";
 import Blog from "./pages/Blog";
 import DefaultPage from "./pages/DefaultPage";
 import BlogPosts from "./pages/BlogPosts";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="nossos-caes" element={<OurDogs />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="galeria" element={<Gallery />} />
         </Route>
 
         <Route path="/blogPosts/:id" element={<BlogPosts />} />

@@ -1,6 +1,6 @@
 import styles from "./AboutOurDogs.module.css";
-import dogs from "../../mocks/dogs.json";
 import DogsCard from "./DogsCard";
+import dogs from "../../mocks/dogs.json";
 import fotos_Bidu from "../../mocks/biduPhotos.json";
 import fotos_Poly from "../../mocks/polyPhotos.json";
 

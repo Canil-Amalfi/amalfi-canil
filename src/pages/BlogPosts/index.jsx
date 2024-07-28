@@ -3,7 +3,6 @@ import articles from "../../mocks/articles.json";
 import EachBlogPost from "../../components/EachBlogPost";
 
 export default function BlogPosts() {
-
     const params = useParams()
     const post = articles.find(article => article.id === Number(params.id));
 
