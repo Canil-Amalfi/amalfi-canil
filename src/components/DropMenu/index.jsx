@@ -1,7 +1,6 @@
 import styles from "./DropMenu.module.css";
 import Overlay from "../../components/Overlay";
 import { IoClose } from "react-icons/io5";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -56,14 +55,6 @@ export default function DropMenu({ toogleMenu }) {
                 GALERIA
               </li>
             </Link>
-          </div>
-          <div className={styles.socials__menu}>
-            <a href="https://www.instagram.com/beaglebiduepoly/" target="blank">
-              <FaInstagram className={styles.socials__iconMenu} />
-            </a>
-            <a href="https://contate.me/canilamalfi" target="blank">
-              <FaWhatsapp className={styles.socials__iconMenu} />
-            </a>
           </div>
         </menu>
       </section>

@@ -35,7 +35,7 @@ export default function Footer() {
             <Link to={'blog'}>
               <li className={styles.listItem__menu}>BLOG</li>
             </Link>
-            <Link to={'galeira'}>
+            <Link to={'galeria'}>
               <li className={styles.listItem__menu}>GALERIA</li>
             </Link>
           </ul>
